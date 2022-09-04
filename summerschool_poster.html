@@ -1,0 +1,571 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+</head>
+<body>
+<main>
+<p>
+<h2 style="font-size: 60px">summerschool: Sense Adapt Create</h2>
+</p>
+
+
+<style>
+    /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700display=swap');  */
+/* @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
+
+
+main{
+  overflow-x: auto;
+  /* border: 5px solid red; */
+  /* margin: 500px; */
+  
+  padding: 20px;
+
+
+}
+#table_program{
+  overflow-x: scroll;
+}
+
+:root {
+  --text-font:'JetBrains Mono', monospace;
+}
+
+body { background:rgb(0, 0, 0); color:rgb(255, 255, 255);; font-family: sans-serif; padding:0; margin:0; }
+header { padding: 45px; border-bottom: 1px solid #222; }
+
+
+
+.logo {text-decoration: none; font-size: 35px; font-family: var(--text-font); font-weight: 700; color: rgb(255, 255, 255);}
+#ha {text-decoration: none; font-size: 35px; font-family: var(--text-font); font-weight: 700; }
+#hb {text-decoration: none; font-size: 35px; font-family: var(--text-font); font-weight: 700; }
+
+#fdgraph {  font-family: sans-serif; color: rgb(0, 0, 255);}
+
+/* #logo:hover {color: rgb(80,80 , 255);} */
+
+
+
+/* .logo:hover {color: rgb(80,80,255); sor: pointer;} */
+/* #container p > a {text-decoration: none; color: rgb(0, 90, 255);} */
+
+#links{color: rgb(0,0,255)}
+/* .nav {border: 1px red solid; position: fixed²;} */
+nav { padding: 45px; float: left; }
+.site-nav section { line-height: 22px; margin-bottom: 50px; }
+.site-nav section h2 { margin: 20px 0 20px 0;}
+.site-nav section ul { margin: 0px; padding: 0px;}
+.site-nav section li {text-decoration: underline; cursor: pointer }
+.site-nav section ul li {list-style-type: none;  }
+
+/* main */
+/* index.html */
+
+/* #container .anim{ animation-name: example; animation-duration: 0.01s; animation-iteration-count: infinite; cursor: pointer;} */
+#container .anim {color: rgb(0,0,255);}
+
+@keyframes example { 
+  0%   {color:rgb(255, 255, 255);  left:0px; top:0px;} 
+  100% {color:rgb(0, 0, 255);        left:0px; top:0px;}
+}
+
+/* github api id's */
+#git_links a{ text-transform: lowercase;}
+
+/* all other .html files */
+
+/* main{ padding: 7px; float:left; max-width:700px; } */
+svg {height: "600"; width: "500";}
+
+main h1 { font-size:45px; text-transform: capitalize} 
+main h2 { font-size:35px; text-transform: capitalize; margin-top: 0px;}
+main > h3 { font-size:20px; text-transform: capitalize} 
+main p { line-height: 25px; font-size:16px; margin-top: 35px;margin-bottom: 35px;  }
+.text { margin-top: 0px; line-height: 20px;  }
+.text a {color: rgb(0, 0, 255);}
+
+main img.small { width: 100%; max-width: 100px;margin-bottom: 35px;} 
+main img.medium { max-width: 347px; margin-bottom: 35px; } 
+main img.big {width: 100%; max-width: 700px; } 
+main > code { font-family: monospace; font-size:12px; margin-bottom: 30px; display: block; background:black; color:white; padding:15px; white-space: pre}
+
+main ul.jump { float: right;  margin-right: -60px; width:0px; text-overflow: ellipsis; white-space: nowrap; overflow:visible;}
+
+main ul.jump li a{color: rgb(255, 255, 255);}
+
+
+.lexicon {cursor: pointer; }
+.cite{ margin:0px; padding:0px; font-size: 11px; float: left;}
+
+footer { line-height: 30px; clear:both; padding:45px; }
+footer hr { margin-bottom: 15px; background-color: rgb(153, 77, 77); }
+
+
+a { color: rgb(255, 255, 255) }
+
+ul { margin:0px 0px 30px 0px; }
+
+
+.contact_logo {float: right; margin-right: 5px; width: 20px; background-color: white;}
+.contact_logo:hover {background-color: rgb(0,0,255);}
+
+
+
+.links line {  stroke-opacity: 1;}
+
+#table_program {  width: 4000px;  border-color: rgb(39, 39, 39);  border-style: solid;}
+
+
+
+.table_1 {  background-color: rgb(0, 0, 0);  text-overflow: ellipsis;  border-style:solid;   vertical-align: top;  text-align: left;}
+.table_2 {  background-color: rgb(0, 0, 0);  text-overflow: ellipsis;  border-style:solid;   vertical-align: top;  text-align: left;}
+.table_3 {  background-color: rgb(0, 0, 0);  text-overflow: ellipsis;  border-style:solid;   vertical-align: top;  text-align: left;}
+.table_4 {  background: linear-gradient(#000000, #000000);  text-overflow: ellipsis;  border-style:solid;   vertical-align: top; text-align: left;}
+.table_5 {  background: linear-gradient(#000000, rgb(0, 0, 0));  background-color: rgb(0,0,255);  border-style:solid;  text-overflow: ellipsis; vertical-align: top; text-align: left;}
+.table_6 {  background-color: rgb(0, 0, 0);  text-overflow: ellipsis;  border-style:solid;   color: blue;  vertical-align: top;  text-align: left;}
+
+
+/* .table_image{  max-width: 350px; width: 155px;} */
+
+table details > summary {}
+
+table details[open] > summary {  text-decoration-line: underline;  cursor: pointer;}
+
+::-moz-selection { /* Code for Firefox */
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+
+/* Mobile */
+
+/* @media (max-width: 2000px) {  #table_program { max-width:1500px; font-size: 0.8em;  }}
+@media (max-width: 1500px) {  #table_program { max-width:1000px; font-size: 0.5em;  }} */
+
+
+@media (max-width: 1100px) {
+  nav { width: 100%; }
+	nav .site-nav section { float: left; margin: 0 10px 10px 0; }
+  main { padding: 40px; float:left; max-width:700px; } 
+  /* #table_program { width:600px; font-size: 0.4em;  } */
+}
+@media (max-width: 1100px) and (min-width: 651px) {
+  nav .site-nav section { width: calc(25% - 10px); }
+  nav .site-nav section:nth-child(4n + 1) { clear: left; }
+}
+
+@media (max-width: 650px) and (min-width: 501px) {
+  nav .site-nav section { width: calc(33% - 10px); }
+  nav .site-nav section:nth-child(3n + 1) { clear: left; }
+}
+
+@media (max-width: 500px) and (min-width: 351px) {
+  nav .site-nav section { width: calc(50% - 10px); }
+  nav .site-nav section:nth-child(2n + 1) { clear: left; }
+}
+
+@media (max-width: 350px) {
+  nav .site-nav section { width: 100%; }
+}
+
+@media (max-width: 350px) {
+  #program{ width: 500px; }
+}
+
+
+
+@media (max-width: 550px) {  #table_program { max-width:550px; font-size: 0.2em;  }}
+
+</style>
+
+
+<div style=" width: 4000px;
+height: 40000px;
+overflow-x: hidden;">
+
+
+<table id="table_program" border="1" cellspacing="0" id="program"  >
+    <tr>
+    <td><b>Time in Hours</b></td>
+    <td><b>Sunday 4/09</b></td>
+    <td><b>Monday 5/09</b></td>
+    <td><b>Tuesday 6/09</b></td>
+    <td><b>Wednesday 7/09</b></td>
+    <td><b>Thursday 8/09</b></td>
+    <td><b>Friday 9/09</b></td>
+    <td><b>Saturday 10/09</b></td>
+    <td><b>Sunday 11/09</b></td>
+    <td><b>Monday 12/09</b></td>
+    <td><b>Tuesday 13/09</b></td>
+    <td><b>Wednesday 14/09</b></td>
+    <td><b>Thursday 15/09</b></td>
+</tr>
+
+<tr>
+    <td class="table_6">9.00</td>
+    
+    <td rowspan="28" class="table_2">arrival / check-in Hostel</td>
+    <td rowspan="4" class="table_2">breakfast (*)</td>
+    <td rowspan="1" class="table_1">Morning Welcome</td>
+    <td rowspan="1" class="table_1">Morning Welcome</td>
+    <td rowspan="1" class="table_6"></td>
+    <td rowspan="1" class="table_1">Morning Welcome</td>
+    <td rowspan="1" class="table_1">Morning Welcome</td>
+    <td rowspan="1" class="table_6"></td>
+    <td rowspan="1" class="table_1">Morning Welcome</td>
+    <td rowspan="1" class="table_1">Morning Welcome</td>
+    <td rowspan="1" class="table_1">Morning Welcome</td>
+    <td rowspan="1" class="table_1">Morning Welcome</td>
+</tr>
+
+<tr>
+    <td class="table_6">9.30</td>    
+    
+    
+    
+    <td rowspan="6" class="table_3"><details open><summary><b>Course #2 </b><br>
+        How to Talk to Sensors? - Gilles Callebaut</summary> <br><div class="table_text">In this interactive workshop, students will learn how to program an ESP32 board to read out a sensor. The general workflow, on how to program and how these platforms work, will be presented. After this session, the students should be able to read out the other sensors provided by the documentation we will give. 
+        <br><br>
+        <span >[<span style="color: blue">E</span>]</span> <br><br>
+        duration: 9.00 - 12.00 
+        
+        <br> <a href="../index.html?agents#Gilles_Callebaut">Gilles Callebaut <img style="display:block;" width="100%" height="100%"  src="./imagers/Gilles_Callebaut.jpg" alt=""></a></div></details> 
+    </td>
+
+
+    <td rowspan="6" class="table_3" ><details open><summary><b>Course #3 </b><br>
+        Design Sprint - Christophe Barlieb</summary> <br><div class="table_text">How can we properly frame complex questions to rapidly target core problems and create plausible solutions? Sense, Adapt, Create are inherent to the Design Sprint concept. We will use these methods to explore iterative design processes.
+
+        <br><br>
+        <span >[<span style="color: blue">A</span>]</span> <br><br>
+        duration: 9.30 - 12.30 <br> 
+        
+        <a href="https://barlieb.com/">Christophe Barlieb<img style="display:block;" width="100%" height="100%"  src="./imagers/Christophe_Barlieb.jpg" alt=""></a>
+            
+        <div ></div></div></details>
+        
+        
+        
+    </td>
+
+    <td rowspan="18" class="table_2">Site Visit <br>@ Verbeke Foundation- Kemzeke (B)</td>
+    <td rowspan="6" class="table_4"> Worksession in Groups</td>
+    <td rowspan="6" class="table_3"><details open><summary><b>Course #6 </b><br>Course #6 Design Thinking - Anders Warrel
+    </summary> <br><div class="table_text">NaN<br><br>
+    <span >[<span style="color: blue">E</span>]</span> <br><br>
+    duration: 9.00 - 12.00 
+    
+    <br> <a href="https://portal.research.lu.se/en/persons/anders-warell">Anders Warrel<img style="display:block;" width="100%" height="100%"  src="./imagers/Anders_Warrel.jpg" alt=""></a></div></details>
+</td>
+<td rowspan="27" class="table_2">Day off </td>
+
+
+
+<td rowspan="6" class="table_3" ><details open><summary><b>Course #8 </b><br>
+Data, Design VR - Stefan Van der Spek & Hans Hoogeboom</summary> <br><div class="table_text">NaN
+<br><br>
+<span >[<span style="color: blue">Ar</span>]</span> <br><br>
+duration: 9.30 - 12.30 <br> 
+<a href="https://scholar.google.com/citations?user=f7kda58AAAAJ&hl=en">Stefan Van der Spek </a>, <a href="https://www.researchgate.net/profile/Hans-Hoogenboom">Hans Hoogenboom</a>
+    
+<div ></div></div></details></td>
+
+
+
+
+
+
+
+
+
+<td rowspan="4" class="table_3" style="max-width: 350px ;" ><details open><summary><b>Course #9 </b><br>How to Pitch - Anders J.J</summary> <br><div class="table_text">Anders J Johansson receivPd the M.S., Lic.Eng., and Ph.D. degrees in electrical engineering from Lund University, Lund, Sweden, in 1993, 2000, and 2004, respectively. From 1994 to 1997, he was with Ericsson Mobile Communications AB, developing transceivers and antennas for mobile phones. Since 2005, he has been an Associate Professor with the Department of Electrical and Information Technology, Lund University. His research interests include antennas, wave propagation, and telemetric devices for medical implants, as well as antenna systems and propagation modeling for MIMO systems. 
+<br><br>
+<span >[<span style="color: blue">Ar</span>]</span> <br><br>
+duration: 9.30 - 11.00 <br> 
+<a href="https://barlieb.com/">Anders J.Johansson<img style="display:block;max-width: 350px;"   style=""  src="./imagers/anders_j_johansson.jpg" alt=""></a>
+    
+<div ></div></div></details></td>
+
+
+<!-- <td rowspan="6" class="table_3"><details open><summary><b>Course #10</b><br>aaaaaaa</summary> <br><div class="table_text">aa</div></details>  -->
+<td rowspan="6" class="table_3"> Worksession in Groups</td>
+</td>
+<td rowspan="6" class="table_4"> Worksession in Groups</td>
+    
+</tr>
+
+<tr>
+    <td class="table_6">10.00</td>
+    
+</tr>
+<tr>
+    <td class="table_6">10.30</td>
+    
+</tr>
+    
+    <tr>
+        <td class="table_6">11.00</td>  
+
+        <td rowspan="3" class="table_1"><details open><summary><b>Welcome! </b><br></summary> <br><div class="table_text">We welcome you in the Hostel. <br>
+        Afterwards, we collect the bycicles @ <a href="https://www.google.be/maps/place/De+Krook/@51.0486073,3.7264986,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3714effffffff:0x9b1a2c7f1cb8c825!8m2!3d51.0486039!4d3.7286873" target="_blank">De Krook</a> and we cycle in group to <a href="https://www.google.com/maps/place/Kasteel+Ter+Beken/@51.0744681,3.6645388,17z/data=!3m1!4b1!4m5!3m4!1s0x47c371c9f1b8e62f:0xc32c9204b3350dfe!8m2!3d51.0744647!4d3.6667275" target="_blank">Kasteel ter Beken</a>.
+        </div></details>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="table_6">11.30</td>
+        <!-- <td rowspan='2' class="table_2"></td> -->
+        <!-- <td rowspan='2' class="table_6"></td> -->
+        <td rowspan='2' class="table_4">Worksession in Groups</td>
+ 
+    </tr>
+        
+    <tr>
+        <td class="table_6">12.00</td>
+        <!-- <td rowspan='1' class="table_6">dd</td> -->
+     
+    </tr>
+    <tr>
+        <td class="table_6">12.30</td>
+        <td rowspan="2" class="table_2">Lunch</td>
+        <td rowspan="2" class="table_2">Lunch</td>
+        <td rowspan="2" class="table_2">Lunch</td>
+        <td rowspan="2" class="table_2">Lunch</td>
+        <td rowspan="2" class="table_2">Lunch</td>
+        <td rowspan="2" class="table_2">Lunch</td>
+        <td rowspan="2" class="table_2">Lunch</td>
+        <td rowspan="2" class="table_2">Lunch</td>
+        <td rowspan="2" class="table_2">Lunch</td>
+    </tr>
+    <tr>
+        <td class="table_6">13.00</td>
+        
+        
+    </tr>
+    
+    <tr>
+        <td class="table_6">13.30</td>
+        <td rowspan="4" class="table_1">Teambuilding </td>
+        <td rowspan="4" class="table_1">Intro main Questions </td>
+        <td rowspan="4" class="table_3"><details open><summary><b>Course #4 </b><br>Point Clouds  - Joris Putteneers </summary> 
+        <br><br>
+        Joris putteneers is an architect and researcher, interested in speculating the anthroposcene through means of software, hardware and media technologies.
+        <br>
+        His work has been exhibited at MomA New York, Londen design festival, Venice Biennale and multiple film <festivals class="br"></festivals>
+        He has taught studios and workshops internationally at the Bartlett UCL, Texas A&M, KUL Faculty of Architecture and TU Wien. <br>
+
+        Since 2017 he has been actively working in his practice where he develops solutions in the fields of Data driven design, Machine learning applications, web and software development, visualisations and Art direction.
+        <br><br>
+        <span >[<span style="color: blue">Ar+E</span>]</span> 
+        <br><br>duration: 13.30 - 15.30
+        <br> <a href="../index.html?agents#Joris_Putteneers">Joris Putteneers<img style="display:block;" width="100%" height="100%"  src="./imagers/Joris_Putteneers.jpg" alt="" style="display:block;" width="100%" height="100%" ></a>
+        </details>
+
+        </td>
+        <td rowspan="4" class="table_3" style="width: 600px;"><details open><summary><b>Course #5 </b><br>Blender Stories  - Dimitri Coppens </summary> <br><div class="table_text">In the storyboarding phase of a video or animation project, the camera movement, angle and framing are important choices. An interesting way to explore the options, is by loading (hand-drawn) 2D images into a Blender scene and to animate the camera.  The resulting movie evoques the feeling of 'flying through' a comic book,  the storyboard becomes dynamic. This course starts with explaining the settings to load .png images with alpha layer with correct lightning settings into the scene. Next, the animation of the camera is used to explain keyframes. Participants are asked to draw and scan at least two images, to bring a laptop and to install Blender, as they will be making their own short animation. 
+            
+        <br><br>
+        <span >[<span style="color: blue">E</span>]</span> <br><br>
+        duration: 13.30 - 15.30 <br> <div ></div></div></details> 
+        </td>
+
+
+        <td rowspan="8" class="table_3"><details open><summary><b>Course #7 </b><br>Houdini - Joris Putteneers + Stefan V.d.S & Hans Hoogeboom </summary> <br><div class="table_text">NaN
+        <br><br>
+        <span >[<span style="color: blue">Ar</span>]</span> <br><br>
+        duration: 13.30 - 17.00 <br> <div ></div></div></details> 
+        </td>
+
+
+
+    </td>
+    <td rowspan="8" class="table_4"> Worksession in Groups</td>
+    <td rowspan="6" class="table_4"> Worksession in Groups</td>
+    <td rowspan="8" class="table_4"> Worksession in Groups</td>
+    <td rowspan="6" class="table_5"> Showtime: Presentations + reception</td>
+    
+</tr>
+
+<tr>
+    <td class="table_6">14.00</td>
+        
+    </tr>
+    
+    <tr>
+        <td class="table_6">14.30</td>
+        
+        
+        
+    </tr>
+    
+    
+    <tr>
+        <td class="table_6">15.00</td>
+        
+    </tr>
+    
+    <tr>
+        <td class="table_6">15.30</td>
+        <td rowspan="6" class="table_3"><details open><summary><b>Course #1 </b><br>
+            Narrative - Corneel Cannaerts - Weronika Gajda</summary> <br><div class="table_text">This lecture will introduce the topic of the summer school, Sense Adapt Create, within the context of urgent contemporary challenges and crises. <br> Based on numerous example it will explore emerging technologies in relationship to ecology, climate an societal challenges, critically as a driver and source of these crises, but also the potential of these technologies to sense the world differently, allowing us to adapt our practices and inform how we create novel outcomes.
+            <br><br>
+            <span >[<span style="color: blue">A + Ar</span>]</span> 
+            <br><br>
+            duration: 15.00 - 17.45 <br> 
+
+            <a href="../index.html?agents#Corneel_Cannaerts">Corneel Cannaerts<img style="display:block;" width="100%" height="100%"  src="./imagers/Corneel_Cannaerts.jpg" alt=""></a>
+            <a href="../index.html?agents#Weronika_Gajda">Weronika Gajda<img style="display:block;" width="100%" height="100%"  src="./imagers/Weronika_Gajda.png" alt=""></a>
+            <div class="table_text"></details>
+                
+            
+                
+            <div ></div></div></details>
+        </td>
+
+        <td rowspan="4" class="table_4"> Worksession in Groups</td>
+        <td rowspan="4" class="table_4"> Worksession in Groups</td>
+        <td rowspan="4" class="table_4"> Worksession in Groups</td>
+    </tr>
+    
+    <tr>
+        <td class="table_6">16.00</td>
+    </tr>
+    
+    <tr>
+        <td class="table_6">16.30</td>
+        <!-- <td rowspan="4" class="table_5">Sharing is Cariaaaang</td> -->
+        <td rowspan="4" class="table_5">intermediate review</td>
+        <!-- <td rowspan="4" class="table_5">intermediate review</td> -->
+        <td rowspan="2" class="table_1">Bicycle Return @ Krook</td>
+    </tr>
+    
+    <tr>
+        <td class="table_6">17.00</td>
+    </tr>
+    
+    <tr>
+        <td class="table_6">17.30</td>
+        <td rowspan="2" class="table_5">Sharing is Caring</td>
+        <td rowspan="2" class="table_5">Sharing is Caring</td>
+        <td rowspan="2" class="table_5">Sharing is Caring</td>
+        <!-- <td rowspan="0" class="table_5"></td> -->
+        <!-- <td rowspan="2" class="table_5">Sharing is Caring</td> -->
+        <td rowspan="2" class="table_5">Sharing is Caring</td>
+        <td rowspan="2" class="table_5">Sharing is Caring</td>
+        <td rowspan="2" class="table_5">Sharing is Caring</td> 
+        <td rowspan="11" class="table_6"></td>
+    </tr>
+    
+    <tr>
+        <td class="table_6">18.00</td>
+    </tr>
+    
+    <tr>
+        <td class="table_6">18.30</td>
+        <td rowspan="2" class="table_6"></td>
+        <td rowspan="2" class="table_6"></td>
+        <td rowspan="9" class="table_6"></td>
+        <td rowspan="9" class="table_6"></td>
+        <td rowspan="2" class="table_6"></td>
+        <td rowspan="9" class="table_6"></td>
+        <td rowspan="2" class="table_6"></td>
+        <td rowspan="9" class="table_6"></td>
+        <td rowspan="9" class="table_6"></td>
+        
+    </tr>
+    
+    <tr>
+        <td class="table_6">19.00</td>
+        
+        
+        
+    </tr>
+    
+    <tr>
+        <td class="table_6">19.30</td>
+        <td rowspan="4" class="table_2">Reception</td>
+        <td rowspan="2" class="table_3"><details open><summary><b>Guest Lecture #1 <br></b>Dries De Poorter<br></summary> <br><div class="table_text">Dries Depoorter is a Belgium artist that handles themes as privacy, artificial intelligence, surveillance & social media. Depoorter creates interactive installations, apps, games. <br>
+            Depoorter exhibited internationally at the Barbican, MUTEK Festival, Art Basel, Bozar, Para Site Hong Kong, Mozilla – The Glass Room San Francisco, HEK Basel, WIRED, IDFA Doclab, Mundaneum, FOMU, Ars Electronica, Athens Digital Art Festival, Art Soutterain, STRP festival, Heidelberger Kunstverein. 
+            <br><br>
+            <span >[<span style="color: blue">A</span>]</span> 
+            <br><br>duration: 19.00 - 20.00 
+            <br> <a href="https://driesdepoorter.be/">Dries De Poorter<img style="display:block;" width="100%" height="100%"  src="./imagers/dries_depoorter.jpg" alt=""></a><div ></div></div></details>
+            </td>
+        <!-- <td rowspan="4" class="table_2">Tutors Diner <br>(location TBC) </td> -->
+        <td rowspan="2" class="table_3"><details open><summary><b>Guest Lecture #2 <br></b>- Stefan Van der Spek<br></summary> <br><div class="table_text">I'm Associate Professor of Urban Design at the Department of Urbanism. My main objective is to improve the Urban Design process by applying new technologies, modelling and simulation, e.g. by using VR and AR as key design tools. In my methods I use evidence-based design and digital tools: integration of traditional mapping, dynamic user data and sensing technologies. Users play a central role in my approach: the City from Eye-level perspective. My research is covering HEALTH by focussing on Active modes (Walking/biking) in relation to the Built Environment.
+        
+            <br><br>
+            <span >[<span style="color: blue">E</span>]</span> 
+            <br><br>
+            
+            duration: 20.00 - 21.00 <br> <a href="https://scholar.google.com/citations?user=f7kda58AAAAJ&hl=en">Stefan van der Spek<img style="display:block;" width="100%" height="100%"  src="./imagers/Stefan_van_der_Spek.jpg" alt=""></a><div ></div></div></details>
+            </td>
+
+            <td rowspan="2" class="table_3" style="width: 400px;" ><details open><summary><b> Guest Lecture #3 </b><br><span ><b> Sound Narratives - David Novack</b></span></summary> <br><div class="table_text">This course establishes a vocabulary for discussing sound in terms of psychoacoustics and basics semiotics, and then engages the students and their ears in dissecting both filmic audiovisual texts and the outside world’s natural and architectural spaces, developing critical skills that enable critical engagement with the universe of sound.<br><br>
+
+                <span >[<span style="color: blue">Ar</span>]</span> <br><br>duration: 9.30 - 12.30 <br> <a href="https://www.odessafilms.com/">David Novack<img style="display:block;" width="100%" height="100%"  src="./imagers/David_Novack.jpg" alt="" style="display:block;" width="100%" height="100%"  ></a></div></details> 
+                </td>
+    </tr>
+    
+    <tr>
+        <td class="table_6">20.00</td>
+        
+        
+    </tr>
+    
+    <tr>
+        <td class="table_6">20.30</td>
+        <td rowspan="5" class="table_6"></td>
+        <td rowspan="2" class="table_3"><details open><summary><b>Guest Lecture #3 <br></b>VR- Data Creation - Hans Hoogenboom<br></summary> <br><div class="table_text">NaN        
+        <br><br>
+        <span >[<span style="color: blue">Ar</span>]</span> 
+        <br><br>duration: 9.00 - 13.00 <br> <a href="https://www.researchgate.net/profile/Hans-Hoogenboom">Hans Hoogenboom<img style="display:block;" width="100%" height="100%"  src="./imagers/Hans_hoogenboom.jpg" alt=""></a><div ></div></div></details>
+        </td>
+        
+    </tr>
+    
+    <tr>
+        <td class="table_6">21.00</td>
+        
+    </tr>
+    
+    <tr>
+        <td class="table_6">21.30</td>
+        <td rowspan="4" class="table_6"></td>
+        <td rowspan="3" class="table_6"></td>
+        
+        <!-- <td rowspan="3" class="table_6"></td> -->
+    </tr>
+
+    <tr>
+        <td class="table_6">22.00</td>
+    </tr>
+
+    <tr>
+        <td class="table_6">22.30</td>
+        
+    </tr>
+  </table>   
+
+</details>
+
+
+
+
+</div>
+</main>
+</body>
+</html>
